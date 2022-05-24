@@ -1,13 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-import AppRouter from "./config/router/router.js";
+import {Link} from "react-router-dom"
 
-function App() {
-  return( 
-
-    <AppRouter />
-  
-  /* <h1 className='container'>SignUp</h1>
+function home(){
+    return <>
+    <h1 className='container'>SignUp</h1>
     <form action="">
       <div className='container'>
         <label htmlFor="email">Email</label><br />
@@ -16,12 +11,11 @@ function App() {
       <div className='container' >
         <label htmlFor="password">Password</label><br />
         <input type="text"name="password" id="password" placeholder='Password'/><br />
-      <button>SignUp</button>
+      <Link to="Sign"><button>SignUp</button></Link>
       </div>
-  // </form> */
-   
-    
-  )
+   </form> 
+    </>
 }
 
-export default App ;
+
+export default home;
